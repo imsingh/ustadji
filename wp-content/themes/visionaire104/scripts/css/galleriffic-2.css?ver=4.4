@@ -1,0 +1,199 @@
+#skyali_gallery{
+	width:100%;
+	height:630px;
+	float:left;
+}
+
+#gallery_container{
+	width:100%;
+	float:left;
+}
+
+div#skyali_gallery div.content {
+	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
+	display: none;
+	float: left;
+	width: 358px;
+	height:445px;
+}
+
+div#skyali_gallery #thumbs{
+	float:left;
+}
+
+div#skyali_gallery div.content a, div#skyali_gallery div.navigation a {
+	text-decoration: none;
+	color: #777;
+}
+div#skyali_gallery div.content a:focus, div#skyali_gallery div.content a:hover, div#skyali_gallery div.content a:active {
+	text-decoration: underline;
+}
+div#skyali_gallery div.controls {
+	margin-top: 5px;
+	height: 23px;
+	display:none;
+}
+div#skyali_gallery div.controls a {
+	padding: 5px;
+}
+div#skyali_gallery div.ss-controls {
+	float: left;
+}
+div#skyali_gallery div.nav-controls {
+	float: right;
+}
+div#skyali_gallery div.slideshow-container {
+	position: relative;
+	float:left;
+	width:358px;
+	height: 445px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+div#skyali_gallery div.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 358px;
+	height: 445px; /* This should be set to be at least the height of the largest image in the slideshow */
+	float:left;
+}
+div#skyali_gallery div.slideshow {
+	float:left;
+	width:678px;
+	height:445px;
+
+}
+div#skyali_gallery div.slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:445px;
+}
+div#skyali_gallery div.slideshow a.advance-link {
+	display: block;
+	width: 678px;
+	height: 445px; /* This should be set to be at least the height of the largest image in the slideshow */
+	
+}
+div#skyali_gallery div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+div#skyali_gallery div.slideshow img {
+	border: 1px solid #ccc;
+	width:678px;
+	height:443px;
+	margin-top:5px;
+	padding-top:0 !important;
+	line-height:0 !important;
+	top:0;
+	left:0;
+	position:absolute;
+}
+div#skyali_gallery div.download {
+	float: right;
+	display:none;
+}
+div#skyali_gallery div.caption-container {
+	position: relative;
+	clear: left;
+	height: 75px;
+	display:none;
+}
+div#skyali_gallery span.image-caption {
+	display: block;
+	position: absolute;
+	width: 358px;
+	top: 0;
+	left: 0;
+}
+div#skyali_gallery div.caption {
+	padding: 12px;
+	display:none;
+}
+div#skyali_gallery div.image-title {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+div#skyali_gallery div.image-desc {
+	line-height: 1.3em;
+	padding-top: 12px;
+}
+div#skyali_gallery div.navigation {
+	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
+}
+div#skyali_gallery ul.thumbs {
+	float:left;
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+	height:458px;
+}
+div#skyali_gallery ul.thumbs li {
+	float: left;
+	padding: 0;
+	margin: 5px 10px 5px 0;
+	list-style: none;
+}
+div#skyali_gallery a.thumb {
+	padding: 2px;
+	display: block;
+	border: 1px solid #f0f0f0;
+}
+div#skyali_gallery ul.thumbs li.selected a.thumb {
+	background: #c7c7c7;
+}
+div#skyali_gallery a.thumb:focus {
+	outline: none;
+}
+div#skyali_gallery ul.thumbs img {
+	border: none;
+	display: block;
+	width:75px;
+	height:75px;
+}
+div#skyali_gallery div.pagination {
+	float:left;
+	width:100%;
+	padding-bottom:17px;
+	display:none;
+}
+
+div#skyali_gallery div.bottom{
+	padding-top:17px;
+}
+
+div#skyali_gallery div.navigation div.top {
+	width:100%;
+	margin-bottom: 12px;
+	float:left;
+	
+}
+div#skyali_gallery div.navigation div.bottom {
+	margin-top: 20px;
+}
+div#skyali_gallery div.pagination a, div#skyali_gallery div.pagination span.current, div#skyali_gallery div.pagination span.ellipsis {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 8px 12px;
+	border: 1px solid #ccc;
+	border-radius:5px;
+	font-size:13px;
+}
+div#skyali_gallery div.pagination a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+div#skyali_gallery div.pagination span.current {
+	font-weight: bold;
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+div#skyali_gallery div.pagination span.ellipsis {
+	border: none;
+	padding: 5px 0 3px 2px;
+}

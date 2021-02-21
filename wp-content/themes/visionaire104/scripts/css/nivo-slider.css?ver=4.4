@@ -1,0 +1,235 @@
+/*
+ * jQuery Nivo Slider v3.1
+ * http://nivo.dev7studios.com
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * Skyali ThemeSkin http://themeforest.net/user/Skyali
+ */
+ 
+/* The Nivo Slider styles */
+h1,h2,h3,h4,h5,h6{
+	font-family:Droid Serif, "Georgia", Times, serif;
+	font-weight:normal;
+}
+
+
+
+.nivoSlider {
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+
+.nivoSlider p{
+	font-size:12px;
+	font-family:helvetica neue, Arial, Helvetica, sans-serif;
+	line-height:1.5em;
+	color:#e5e5e5;
+}
+
+.nivoSlider h1 a{
+	text-decoration:none;
+	border-bottom:none !important;
+	font-size:25px;
+	color:#ca1111;
+}
+
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	max-width: none;
+}
+.nivo-main-image {
+	display: block !important;
+	position: relative !important; 
+	width: 100% !important;
+}
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+	top:0;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+	overflow:hidden;
+}
+.nivo-box img { display:block; }
+
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	max-width:400px;
+	z-index:8;
+	padding: 10px 35px;
+	opacity: 0.8;
+	overflow: hidden;
+	display: none;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	min-height:100px;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav {
+	text-align:center;
+	padding: 15px 0;
+}
+.nivo-controlNav a {
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}
+
+.slider-wrapper.theme-nivo {
+    width:100%;
+    min-height:300px;
+	background:url(nivo_slider_shadow.png) bottom no-repeat;
+	padding-bottom:27px;
+	padding-top:25px;
+	clear:both;
+}
+.slider-wrapper.theme-nivo { position: relative; }
+.theme-nivo .nivoSlider {
+	position:relative;
+	background:#fff url(loading.gif) no-repeat 50% 50%;
+}
+.theme-nivo .nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.theme-nivo .nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.theme-nivo .nivo-controlNav {
+	background:url(nivo-control.png) repeat-x;
+    height:37px;
+	position:absolute;
+	left:46%;
+	bottom:11px;
+    margin-left:-51px; /* Tweak this to center bullets */
+    z-index:210;
+   padding-left:25px;
+   padding-right:25px;
+   padding-bottom:0;
+   padding-top:0;
+    opacity:1.0;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    -ms-transition: opacity 300ms ease-in-out;
+    -o-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+	border:1px solid #353333;
+	border-radius:5px;
+}
+.theme-nivo:hover .nivo-controlNav {
+    opacity:1.0;
+}
+.theme-nivo .nivo-controlNav a {
+	display:block;
+	width:18px;
+	height:18px;
+	background:url(bullets_red.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+	margin-top:10px;
+}
+.theme-nivo .nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.theme-nivo .nivo-directionNav a {
+	display:block;
+	width:50px;
+	height:50px;
+	background:url(arrows.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+    opacity: 0;
+    -webkit-transition: opacity 300ms ease-in-out;
+    -moz-transition: opacity 300ms ease-in-out;
+    -ms-transition: opacity 300ms ease-in-out;
+    -o-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+}
+.theme-nivo:hover .nivo-directionNav a { opacity: 1; }
+.theme-nivo a.nivo-nextNav {
+	background-position:-50px 0;
+	right:40px;
+    top:190px;
+}
+.theme-nivo a.nivo-nextNav:hover {
+	background-position:-50px -70px;
+}
+.theme-nivo a.nivo-prevNav {
+	left:40px;
+    top:190px;
+}
+.theme-nivo a.nivo-prevNav:hover {
+	background-position:0 -70px;
+}
+
+.theme-nivo .nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.theme-nivo .nivo-caption a:hover {
+    color:#878787;
+}
